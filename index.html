@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Aesthetic Intelligence Demo</h2>
+
+<div id="stateMonitor">
+  <h3>Behaviour State Monitor</h3>
+  <p><strong>State:</strong> <span id="monitorState">neutral</span></p>
+  <p><strong>Reason:</strong> <span id="monitorReason">-</span></p>
+</div>
+
+<div class="container">
+  <div id="left" class="panel">LEFT PANEL</div>
+
+  <div id="main" class="panel">
+    MAIN AREA <br /><br />
+    <button id="actionBtn">Primary Action</button>
+    <br /><br />
+    <button id="undoBtn">Undo</button>
+    <br /><br />
+    <button id="sendCoreBtn">Send Behaviour to Core</button>
+  </div>
+
+  <div id="right" class="panel">RIGHT PANEL</div>
+</div>
+
+<div id="logPanel">
+  <h3>Live Behaviour Logs</h3>
+  <pre id="logs"></pre>
+</div>
+
+<script src="sync_core_stub.js"></script>
+<script src="behaviour_engine.js"></script>
+<script src="pattern_detector.js"></script>
+<script src="layout_engine.js"></script>
+<script src="session_tester.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "confused": {
+    "if": "hover_main > 6 and click_repetitions < 2",
+    "then": "Show help, soften UI"
+  },
+  "uncertain": {
+    "if": "backtracks >= 2",
+    "then": "Stabilize layout"
+  },
+  "task_intent": {
+    "if": "click_repetitions >= 5",
+    "then": "Prioritize main actions"
+  },
+  "focused_left": {
+    "if": "dwell_left > 3",
+    "then": "Expand left panel"
+  },
+  "searching": {
+    "if": "scroll_depth > 70",
+    "then": "Highlight right panel"
+  }
+}
